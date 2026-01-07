@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập Form Đăng Ký</title>
+    <link rel="stylesheet" href="cssbai3.css">
+</head>
+<body>
+
+    <form action="signin.php" method="post">
+        <table class="my-table">
+            <tr>
+                <td colspan="2" class="header-cell">
+                    <h1>registratic</h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">enter name</td>
+                <td><input type="text" name="name" placeholder="Tên của bạn..."></td>
+            </tr>
+            <tr>
+                <td class="label">enter password</td>
+                <td><input type="password" name="password" placeholder="Mật khẩu..."></td>
+            </tr>
+            <tr>
+                <td class="label">enter address</td>
+                <td><input type="text" name="address" placeholder="Địa chỉ..."></td>
+            </tr>
+            <tr>
+                <td class="label">game</td>
+                <td class="options">
+                    <input type="checkbox" id="h"> <label for="h">hockey</label><br>
+                    <input type="checkbox" id="f"> <label for="f">footbal</label><br>
+                    <input type="checkbox" id="b"> <label for="b">badminton</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">gender</td>
+                <td class="options">
+                    <input type="radio" name="g" id="m"> <label for="m">male</label>
+                    <input type="radio" name="g" id="fe"> <label for="fe">female</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">age</td>
+                <td>
+                    <select name="age">
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="button-row">
+                    <input type="button" value="sign in" class="btn btn-blue">
+                    <input type="reset" value="reset" class="btn btn-gray">
+                    <input type="submit" value="submit" class="btn btn-red">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
