@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>form control</title>
+        </head>
+        <body>
+            <form action="#" method="get">
+                <!-- text input-->
+                <p> ten đăng nhâp:   <input type="text" name="username" size="20" maxlength="50"/> </p>
+                <p> mật khẩu:   <input type="password" name="password" size="5" maxlength="15"/> </p>
+                <p>nhập câu hỏi bí mật: 
+                    <textarea name="question"  cols="50" rows="3">
+                        câu hỏi   
+                    </textarea>
+                    <p>
+                        phái:
+                        <input type="radio" id="male" name="gender" value="male"  />
+                        <label for="male">nam</label>
+                        <input type="radio" id="female" name="gender" value="female"  />
+                        <label for="female">nữ</label>
+                    </p>
+
+                    <p>
+                        <fieldset>
+
+                       
+                        <legend>ở thích:</legend>
+                        <input type="checkbox"  id="music" name="sothich" value="music" />
+                        <label for="music" >âm nhạc</label> </br>
+                        <p>
+                        <input type="checkbox"  id="play game" name="sothich" value="play game"/>
+                        <label for="play game" >games</label> </br>
+                        </fieldset>
+                    </p>
+                    </p>
+                    <p>
+                        ngày sinh :
+                        <input type="date" name="ngày sinh " />s
+
+
+
+
+                    </p>
+                    <p>
+                        thiết bị bạn thường sử dụng:
+                            <select name="thiết bị" >
+                                <option value="laptop"> máy tính sach tay </option>
+                                <option value="diemthoai"> điện thoại cầm tay  </option>
+                                <option value="máy tính bảng" selected> máy tính bảng   </option>
+                            </select>
+
+
+
+                    </p>
+
+                    <p>
+                        thiết bị bạn thường sử dụng:
+                            <select name="thiết bị 2" multiple   size="3" >
+                                <option value="laptop"> máy tính sach tay </option>
+                                <option value="diemthoai"> điện thoại cầm tay  </option>
+                                <option value="máy tính bảng" selected> máy tính bảng   </option>
+                                <option value="máy tính pc" selected> máy tính pc</option>
+                            </select>
+                    </p>
+                    <p>
+                        cv:
+                        <input type="file" name="cv"/>
+                    </p>
+                    <p>
+                        <input type="submit"  value="đăng ký"/>
+                        <input type="reset" value="nhập lại"/>
+                    </p>
+                
+            </form>
+        </body>
+    </html>
