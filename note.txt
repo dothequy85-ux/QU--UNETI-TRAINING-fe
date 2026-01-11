@@ -1,0 +1,44 @@
+cách đặt tên class -id
+-cú pháp: chấp nhận chữ cái (thường , hoa) số , gạch dưới , gạch ngang 
++không đc bắt đầu bằng sôs
++không chấp  nhận ký tụe đặc biệt
+-lưu ý :
++tạo class có y nghĩa(hạn chế tối đa viết tắt )
++nên sử dụng tiếng anh 
++nên sử dụng quy tắc BEN(hojc sau)
+
+
+
+sự phân biệt giữa class với id 
+1. class :
+-trong 1 thẻ html có thể có nhiều class
+-class sẽ tốt hơn cho việc kế thừa css (tránh trùng lặp css , dễ nâng cấp bản trì  ) 
+
+2 id:
+-trong 1 thẻ html chỉ có 1 id
+-độ ưu tiên id class cao hơn 
+-id sẽ hạn chế việc kế thừa css 
+
+Khi nào dùng class khi nào dùng id ?
+
+1   với clas;
+- đc dùng phổ biết trong tất cả các trường hợp 
+-muốn có sự kế thừa 
+-
+
+2 với id:
+-muốn độ ưu tiên cao
+-hỗ trợ trong javascript(DOM)
+-sử dụng chp các thành phần ít xuât hiện  (ít có sự lặp lại )
+
+vd:
+<header id="head">
+    <h1 class ="title">header</h1>
+</header>
+
+<main id="wrapper">
+</main>
+
+<footer  id=" footer">
+    <h1 class ="title">header</h1>
+</footer>

@@ -1,0 +1,40 @@
+p~ul{
+    background:green;
+}
+
+/*
+selector1 ~ selector2 =>bên html selector 1  sẽ nằm trc selector 2
+
+-selector1 và seleocr2 phải ngang hàng với nhau
+--selector1 và seleocr2 phải nằm cùng trong 1 cha
+- seleocr2 nằm sau nhưng  không cần liên tiếp(có sự xen nanh của html khác)
+
+*/
+.content .block ~ .element p {
+    color: red;
+}
+
+.menu ul{
+    list-style: none;
+    background: green;
+    padding: 5px 15px;
+    border-right: 1px solid #fff;
+}
+
+.menu ul li{
+    display: inline-block;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.menu ul li:last-child{
+    border: none;
+}
+
+.content > *{
+    color: green;
+}
+
+.list-website a[target]{
+    color:red;
+}

@@ -1,0 +1,73 @@
+/*
+phân cấp cha con ()
+
+TH1: phân cấp không giới hạn 
+*/
+
+.content .item{
+    color: red;
+}
+
+#main .item{
+    color : green;
+}
+
+.produce .produce-item .produce-title{
+    color: rgb(128, 107, 0)
+}
+
+/*
+
+TH2: phân cấp dạng 1 cấp (cấp con)
+*/
+
+.new> .new-item .new-detail{
+    color: green
+}
+/*đổi backgr cho cấp cha*/
+.primary-menu>ul>li>a{
+    color: red;
+    text-decoration: none;
+}
+/*đổi backgr cho cấp con*/
+.primary-menu>ul ul{
+    background:green ;
+}
+
+.primary-menu>ul ul > li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*selector cùng cấp */
+.block{
+    color: red;
+}
+
+p.block{
+    color: green;
+}
+
+.element.text#text{
+    color: blueviolet;
+}
+
+.element.title#title{
+    color: green;
+}
+
+/* khai báo cùng cấp càng nhiều thì độ ưu tiên càng cao*/
+.produce-box .feature{
+    color: red;
+    font-size: 2rem;
+}
+.produce-box .produce-item{
+    color: green;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+/*.produce-box .produce-item.feature{
+    color: red;
+    font-size: 2rem;
+}
