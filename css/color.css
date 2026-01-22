@@ -1,0 +1,29 @@
+/* thuộc tính color
+-tác dụng: thay đổi màu sắc của văn bản
+ -cú pháp:color<value>
+ +color:tên thuộc tính
+ +value:màu sắc cần thay đổi
+
+=>value sẽ nhận các giá trị:
++tên màu(tiếng anh) =>chỉ áp dụng với các màu cơ bản , phổ biến
++mã màu hexa(#+6 ksy tự):
+-nếu 6 ksy tự giống hệt nhau chỉ cần viết 3 ký tự:#333
+mày rgb(rgb(number1,number2,number3)):rgb(255,0,0)
+-màu hsl:hsl(0,100%,50%) 
+
+- các cách lấy mã màu:
++dùng    colorpicker  :vscode, trang web onl, phần nêm photoshop
+cài extention hỗ trợ:
+1collorzilla
+2 dùng qua deltool
+ dùng rgba():rgba(number1,number2,number3,opacity )
+ =>opacity sẽ nhận giá trị từ 0 đến 1
+ +dùng grb:rgb(number1 number2 number3/opacity)
+ =>opacity sẽ nhận giá trị từ 0 đến 100%
+luu Ý: tất cả các màu sắc đề u phải làm theo thuộc tính này
+
+*/
+
+.text{
+    color: rgb(255 67 0/50%);
+}   

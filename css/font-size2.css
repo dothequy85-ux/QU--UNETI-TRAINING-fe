@@ -1,0 +1,23 @@
+/* thuộc tính font-size: 
+thay đổi kiểu chữ:(đứng, nghiêng)
+value:tên kiểu
+++normal:giá trị mặc định chữ đứng
+++italic:chư nghiêng
+=>lưu ý: việc thay đổi kiểu chữ phụ thuộc vào font chữ
+
+thuộc tính  font-weight
+-tác dụng:thay đổi dộ dày của chữ
+-cú phap: font-weignt:<value>
++font-weight:tên thuộc tính
++value:giá trị độ dày
+++normal: mặc định
+++100,200,300,400,500,600,700,800,900=> phụ
+thuộc vào font chữ
+++bold
+++bolder
+
+*/
+.text{
+    font-style:italic  ; 
+    font-weight: 900;
+}

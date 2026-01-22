@@ -1,0 +1,20 @@
+/*thuộc tính forn-family
+    -tac dụng:thay đổi forn chữ cho văn bản
+    -cú pháp:font-family:<value>
+    +value:tên font chữ (nếu tên forn chữ đó có dấu cách => bổ sung vào trong dấu nháy đơn hoặc nháy kép)
+    =>có thể đưa nhiều forn chữ vào cùng 1 thuộc tính font-family  
+    
+    extiention hỗ trợ khi làm viễ với font chữ:
+    =>what's font:
+
+
+
+    */
+
+    .text{
+        font-family:sans-serif;
+    }
+
+    .content{
+        font-family: serif;
+    }

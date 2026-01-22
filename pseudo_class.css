@@ -1,0 +1,80 @@
+.btn{
+    background:red;
+        color:#fff;
+        border: 0;
+}
+.btn:hover{
+    background:green;
+
+}
+.btn:active{
+    background-color: blueviolet;
+}   
+.btn:focus{
+    background-color:purple;
+}
+
+.gender-field label input:checked ~ span{
+    color:red;
+    text-decoration: line-through;
+     
+}
+
+.join-list label input:checked ~ span{
+    color: blue;
+    text-decoration: line-through;
+    font-style: italic;
+}
+/*menu-box*/
+.menu-box .primary-menu{
+    display: none;
+}
+
+#menu-box #menu-toggle{
+        display: none;
+}
+
+.menu-box .menu-btn{
+    background-color: brown ;
+    padding: px 10px;
+    color:#fff;
+}
+
+.menu-box input:checked~.primary-menu{
+    display: block;
+}
+
+.form-register .field-item:disabled{
+    background: #999;
+    border: 0;
+    color: red;
+}
+
+.content p:empty{
+    height: 5px;
+    background-color: red;
+}
+
+/* .hightlight p{
+color: green;
+} */
+
+.content p:not(.hightlight){
+    color: green;
+}
+
+.list-position li:first-child{
+    color: red;
+    font-style: italic;
+}
+
+.list-position li:last-child{
+    color: rgb(0, 255, 238);
+}
+
+.produce-lists .produce-item:nth-child(2n+2){
+    color: red;
+}
+.produce-lists .produce-item:nth-child(2n+3){
+    color: green;
+}

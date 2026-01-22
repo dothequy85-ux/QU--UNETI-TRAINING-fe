@@ -1,0 +1,27 @@
+.title{
+    color: green;
+}
+
+.title::before{
+    content:'';
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    background: green;
+    margin-right: 30px;
+}
+.content::first-letter{
+    color: red;
+    font-size: 20px;
+}
+
+.content::first-line{
+    color: blue;
+}
+
+.content::selection{
+    color:yellow;
+    background-color: red;
+}
+
+

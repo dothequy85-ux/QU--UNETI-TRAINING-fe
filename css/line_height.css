@@ -1,0 +1,12 @@
+/* thuộc tính line-hẹgt:
+-giãn dòng văn bản
+cú pháp:line_height:<lavue> hoặc line_height:<value><unit>
++line-hẹght: tên thuộc tính
+value:giá trị cần giãn
+*/
+body{
+font-size:30px ;
+}
+.text{
+    line-height: 1,25em;
+}

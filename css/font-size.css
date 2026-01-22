@@ -1,0 +1,57 @@
+/* thuộc tính font-size:
+-tác dụng: thay đổi cỡ chữ trong trang web
+cú pháp font-size:<value>
+font-size: thuộc tính
+value: thuộc tính cỡ chữ 
+ các đơn vị trong css
+ -tuyệt đối:
+ pixel(px)
+ point(pt):1pt=1.3px
+
+-tương đối:
++rem =>kế thừa từ thành phần măc định
+(1em = font-size thành phần cha)
++em => kế thừa thành phần cha gần nhất
+(1em = font-size thành phần cha)
++% =>kế thừa từ thanh phân cha gần nhất
+(100% = font-size thành phần cha)
++vh
++vw
+
+các giá trị kế thừa( áp dụng với all các thuộc tính):
+-inherin: kế thừa theo thành phần cha gần nhất
+-initial : kế thừa theo mặc định trình duyệt(không bị kế thừa từ html)  
+-unset:huỷ bỏ thuộc tính đã set 
+
+
+*/
+
+ html{
+    font-size: 50px;
+    color: red;
+} 
+
+body{
+    font-size: 20px;
+}
+/*
+.text{
+    font-size:200%em;
+}
+*/
+
+.text{
+    font-size: 18px;
+} 
+
+.text{
+    /* font-size: initial;
+    color: inherit; */
+    font-size: 1rem;
+} 
+
+.text{
+    font-size: unset;
+}
+
+
