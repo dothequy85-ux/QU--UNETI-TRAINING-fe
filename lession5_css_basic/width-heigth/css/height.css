@@ -1,0 +1,22 @@
+/*
+thuộc tính height
+-tác dụng:thiết lập chiều cao cho các thành phần của html (chỉ block)
+-cú pháp height:vaule-unit
++value:giá trị chiều cao
++unit:đơn vị(tuyệt đối, tương đối ,
+
+các thuộc tính liên quan :
+-max-height
+-min-height
+=>tư duy giống max-with,min-width
+
+*/
+.content
+
+.block {
+    width: 400px;
+    height: 100vh;
+    background-color: green;
+    color: #fff;
+
+}

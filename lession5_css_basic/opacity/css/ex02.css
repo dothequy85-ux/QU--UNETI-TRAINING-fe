@@ -1,0 +1,10 @@
+.gallery-list img{
+    border-radius: 10px;
+    border:1px solid #ddd;
+
+}
+
+.gallery-list img:hover{
+    opacity: .5;
+    filter: grayscale(1);
+}

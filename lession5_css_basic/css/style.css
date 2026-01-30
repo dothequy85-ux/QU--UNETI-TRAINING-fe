@@ -1,0 +1,33 @@
+.service-section{
+    height: 600px;
+    background: url(../image/222.png)no-repeat;
+    background-size: cover;
+    /*line-height: 400px;*/
+    padding: 100px;
+}
+
+.service-section .service-inner{
+    width: 60%;
+    text-align: center;
+}
+
+.service-section .service-inner .title-pimary{
+    color: red;
+}
+
+.service-section .service-inner .btn{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+
+.service-section .service-inner .btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.service-section .service-inner .btn-wrap{
+    padding-top: 10px;
+}
