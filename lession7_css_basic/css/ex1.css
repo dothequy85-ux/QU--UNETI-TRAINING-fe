@@ -1,0 +1,44 @@
+/* thuộc tính display
+-tác dụng:thayb đổi  chế độ hiển thị của thành phần html
+-cú pháp: display:value
++none:ẩn thành phần html (mất không gian)
++block: chuyển thanhf phần html qua dạng thẻ block
++inline:chuyển thành phần html qua dạng thẻ inline
++inline-block:chuyển các thẻ block nằm trên cùng một hàng
+
+-lưu ý: thuộc tính display sẽ có rất nhiều giá trị phức tạp (học ở phần nâng cao)
+
+thuộc tính visibility:
+-tác dụng:ẩn thành phần html không bị mất trong không gian 
+-cú pháp:víibility:value
++hidden:ẩn thành phần
++visible:hiện thành phần 
+
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.inlie{
+    font-size: 0;
+    margin: 0 auto;
+    visibility: hidden;
+    width: 800px;
+    display: block;
+}
+
+.block{
+    display: inline-block;
+    border: 1px solid rebeccapurple;
+    width: 50%;
+    font-size: 2rem;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+
