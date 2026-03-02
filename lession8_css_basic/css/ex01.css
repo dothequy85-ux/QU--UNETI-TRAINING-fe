@@ -1,0 +1,45 @@
+/* định dạng danh sách
+1 thuộc tính list-style-type
+-tác dụng:thiết lập kiểu danh sách
+-cú pháp:list-style-type:value
++none
++disc
++square
+
+2 thuộc tính list-style-position
+-tác dụng:thay đổi vị trí biểu tượng (trong và ngoài)
+-cú pháp:list-style-position:value
++inside:bên trong
++outside:bên ngoài
+
+3 thuộc tính list-style-image
+-tác dụng:thay thế biểu tượng thành dạng ảnh
+-cú pháp:list-style-image('duong_dan_anh')
+
+=>nhược điểm:không thể thay đổi kích thước ảnh bằng css
+mà cần phải thay đổi kích thước ảnh gốc
+=>không nên sử dụng vì không linhn hoạt
+
+4 thuộc tính list-style:
+-tác dụng:tổng hợp type,posion,image
+-cú pháp:list style:style position image
+không quan trọng thứ  tự
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+.content{ 
+width: 500px;margin: 30px auto;
+border: 1px solid red;
+}
+
+
+.content ul{
+    list-style-type: decimal;
+    /* list-style-position: inside; */
+}
