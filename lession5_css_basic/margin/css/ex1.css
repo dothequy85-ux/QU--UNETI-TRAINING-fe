@@ -1,0 +1,62 @@
+/*
+Thuộc Tính Margin trong css
+-tác dụng:căn lề (bên ngoài) các thành phần html 
+
+-cú pháp 1:margin:value
++giá trị + đơn vị
++auto
+
+cú pháp 2:margin:value1 value2
++value1: top=bottom
++value2: left=right
+
+cú pháp 3:margin:value1 value2 value3
++value1 : top
++value2 left=right
++value3 bottom
+
+cú pháp 3:margin:value1 value2 value3 value4
++value1 : top
++value2 : right
++value3 : bottom
++value4 :left
+
+thuộc tính mở rộng: 
+-margin-top
+-margin-left
+-marin-right
+-margin-bottom
+
+
+kỹ thuật căn giữa thẻ block
+-width <100% (so với thành phần cần căn chỉnh)
+-áp dụng margin-left=auto và margin-right=auto
+
+
+lưu ý: margin không hoạt động với thẻ inline thì phải chuyển qua inline-block, hoặc block
+*/
+
+.content {
+    width: 300px;
+    border: 1px solid red;
+    box-sizing: content-box;
+    /* margin: 10px 0 0 30px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    width: 500px;
+    border: 1px solid chocolate;
+}
+
+.block {
+    border: 1px solid rebeccapurple;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bnt{
+    margin: 100px;
+    display:inline-block;
+}

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.block{
+    width: 500px;
+    height: 400px;
+    margin: 300px;
+   background: linear-gradient(to right, red 10%, green 50%, yellow 80%);
+}

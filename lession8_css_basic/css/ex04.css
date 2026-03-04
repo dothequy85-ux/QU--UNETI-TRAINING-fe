@@ -1,0 +1,56 @@
+/*
+counter trong CSS:
+ý nghĩa:tập hợp các thuộc tính giúp đánh số tự động theo ý muốn 
+-các thuộc tính :
+
+1counter-reser =>reset tạo 1 counter mới
+
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.list-song{
+    width: 500px;
+    margin: 30px auto;
+    counter-reset: song;
+}
+
+.list-song .item{
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+    color: rgb(7, 136, 35);
+    clear: both;
+}
+
+.list-song .item::before{
+    counter-increment: song;
+    content:counter(song);
+    display: block;
+    float:left;
+    height: 30px;
+    margin: 10px;
+    width: 25px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.list-song .chillren{
+    margin-left: 10px;
+    counter-reset: song-chillren;
+}
+
+.list-song .chillren .item{
+    counter-increment: song-chillren;
+}
+
+.list-song .chillren .item::before{
+    content: "#"  counter(song)"." counter(song-chillren);
+}
+

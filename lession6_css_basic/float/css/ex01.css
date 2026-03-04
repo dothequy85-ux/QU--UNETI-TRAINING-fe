@@ -1,0 +1,73 @@
+/*
+thuộc tính float
+-tác dụng: 
++dùng để trôi thành phần html qua bên
+ trái hoặc bên phải của thành phần cha bao quanh nó 
+
+
+cú pháp:float:value
++float:tên thuộc tính
++value: giá trị muốn trôi
+++none:mặc định không trôi về phía nào
+++left:trôi về bên trái
+++right:trôi về phía bên phải
+
+lưu ý: 
++chiều cao của thành phần cha sẽ bị rết về 0 nếu bên 
+trong đó sử dụng float
++để khắc phục tình trạng mất chiều cao thành phần cha,
+dùng overlow cho thành phần (Trừ overlow:visable)
++nếu còn không gian trốn , các thành phần bên dưới sẽ tự
+ động trôi lên thành phần còn trống (lấp đầy)
+
+
+ thuộc tính clear
+ -tác dụng:khắc phục tình trạng tự động trôi khi dùng float
+ -cú pháp: clear:value
+ +clear: tên thuộc tính
+ +value: giá trị hướng muốn khắc phục
+ ++left :khắc phục trôiv ề bên trái
+ ++right: khắc phục trôi về bên phải
+ ++both: khắc phục cả left và right
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.block-1{
+    background-color: green;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    width: 30%;
+    height: 200px;
+    line-height: 200px;
+    float: right;
+}
+
+.block-2{
+    background-color:red;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    width: 30%;
+    height: 150px;
+    float:left;
+}
+    
+
+.text {
+    clear: both;
+}
+
+/* .img-alight{
+    text-align: right;
+} */
+
+.img-alight img{
+    display: block;
+    margin: auto;
+}

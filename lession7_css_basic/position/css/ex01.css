@@ -1,0 +1,92 @@
+/*
+thuộc tính position
+-tác dụng: giúp thay đổi linh hoạt các thành phần html
+-cú pháp: position:value
++stacitc:mặc định
++relative:thay đổi vị trí tương đối
++absolute:thay đổi vị trí tuyệt đối
++fiwed:cố định thành [hần htnl khi kéo thanh cuột
+
+các thuộc tính bổ sung (chỉ tồn tại khi có position)
++top:căn ở vị trí top
++left:căn ở vị trí top
++right:căn ở vị trí right
++bottom: căn ở vị trí bottom
+-z-index:sắp xếp thứ tự hiển thị theo trục z(vuông góc với mà hình)
+
+position relative:
+-dùng để thay di chuyển các thành phần html không làm ảnh hưởng
+đến các bố cục chung của giao diện
+-áp dụng di chuyển vị trí top và left
+-bám theo thành phần bao quanh nó
+-khi dùng đơn vị % =>sẽ tỉ lệ theo width , height của thành phần cha bao quanh nó 
+
+
+positinon absolute
+-lấy body làm cha để bám theo
+-di chuyển linh hoạt:sang phải , xuống dưới.
+-nếu co sự tồn tại của left và right =>ưu tiên left(set thuộc tính width)
+-nếu có sự tồn tại của top và bottom =>ưu tiên top(xét thuộc tính height)
+-nếu không set width và có cả left và right  =>giãn chiều rộng theo đúng kích thước 
+đã thiết lập ở leftvà right
+-nếu không set height và có cả top và bottom =>giãn chiều cao theo đúng kích thước 
+đã thiết lập ở top và bottom
+-nếu muốn absolute bám theo phần cha bao quanh nó thì ta xét cho thành phần cha thộc
+ tính positinon absolute 
+
+
+ position fixed
+ -luôn lấy body làm cha (không thể khắc phục đc bằng realitve)
+-không cố định các thành phần html
+-các đặc tính tuyệt đối gióng như absolute
+
+z-index:
+-sắp xếp các thành phần chồng lên nhau
+-thành phần html phía sau sẽ mặc định nằm trên thành phần html phía trước
+-thành phaafn html có thuộc tính position sẽ luôn đc ưu tiên  nằm trên 
+các thành phần không có position
+-mặc định z-index các thành phần có position = 0
+*/
+
+.block{
+    width: 300px;
+    margin: 30PX auto;
+    border: 1px solid red;
+}
+
+body{
+    height: 300px;
+}
+.item{
+    background-color: green;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #fff;
+    width: 100px;
+}
+
+.item:nth-child(1){
+    background-color: green;
+    position: relative;
+    top: 50px;
+}
+
+.item:nth-child(2){
+    background-color: rgb(183, 27, 40);
+}
+
+.item:nth-child(3){
+    background-color: rgb(73, 4, 27);
+    position: absolute;
+    /* height: 30px; */
+    /* top :10px; */
+    bottom: 0;
+    /* right: 0; */
+    z-index: 1px;
+}
+
+.item:nth-child(4){
+    background-color: rgb(12, 43, 116);
+    position: relative;
+}

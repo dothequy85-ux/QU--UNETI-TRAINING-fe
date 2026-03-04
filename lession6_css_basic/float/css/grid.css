@@ -1,0 +1,25 @@
+/* hệ thống ưới phục vụ chia layout css
+-chia chiều rộng màn hình thành 12 cột bằng nhau 
+-xây dựng các class tương ứng với độ rộng muốn chiếm
+
+
+*/
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.col{
+    float: right;
+    min-height: 1pxs;
+    padding: 0 10px;
+}
+
+.col-3{
+    width: 30%;
+}/* 100%/(12/3)*/
+
+.product-box .product-item{
+border: 1px solid red;
+}

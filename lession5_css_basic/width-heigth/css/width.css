@@ -1,0 +1,51 @@
+/*THUỘC TÍNH WIDTH
+-TÁC DỤNG:THAY ĐỔI CHIỀU RỘNG CỦA CÁC THẺ BLOCK
+-CÚ PHAP: WIDTH: VALUE+UNIT
++VALUE:GIÁ TRỊ KÍCH THƯỚC
++UNIT:ĐƠN VỊ(TẤT CẢ CÁC ĐƠN VỊ ĐÃ HỌC +ĐƠN VỊ VW)
+
+lưu ý:
+-thuộc tính width không tác dụng với thẻ inline 
+-nếu muốn sử dụng width trong các thẻ inline =>chuyển thanh block hoặc block-inline
+-các đơn vị tương đối sẽ tỉ lệ với thành phần cha gần nhất(trừ vw , rem , em)
+với rem và em =>theo kích thuóc của font-size(với width , height ít kih đc sử dụng)
+đơn vị vw(viewport width)
+
+thuộc tính max-width:
+-tác dụng: giú thiết lập chiều rộng lớn nhất
+cú pháp max-width:value+unit
+
+lưu ý:
+-đơn vị áp dụng giống như thuộc tính width
+-thuộc tính max-width chỉ có tac dụng khi kích thước gốc của thành 
+phần > giá trị của thuộc tính max-width 
+-thuộc tính max-with khi kết hợp với một width trong cùng một selector 
+thì max-width sẽ chặn  
+-kích thước thực của html không phải lúc nào cỹng là mặc định có thể thay đổi bằng thuộc tính width
+*/
+.content{
+    width: 600px;
+    font-size: 20px;
+}
+
+.block{
+    width: 500px;
+    /* background-color: green; */
+    border: 1px solid red;
+}
+
+.block .img{
+max-width: 400px;
+width:400px
+}
+
+.demo a{
+    width: 200px;
+    background: red;
+    color:#fff
+
+}
+
+.demo input{
+    width:200px
+}

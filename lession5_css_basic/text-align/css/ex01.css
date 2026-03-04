@@ -1,0 +1,24 @@
+/*
+thuộc tính text-align
+-tác dụng: căn chỉnh văn bản và các thẻ inline
+-cú pháp:text-inline:value
++left
++center
++right
++jusstify
+
+lưu ý:
+-thuộc tính tễt-align không chỉ dừng lại ở text 
+-thuộc tính phải viết theo thẻ block  để căn chỉnh tất cả các thẻ khác bên trong
+-các vị trí căn chỉnh trong text-align  sẽ bán teo chuêuf rộng của thẻ block
+*/
+
+.bnt{
+    text-align: center;
+}
+
+.bnt-wrap{
+    width:400px;
+    text-align: justify ;
+    border:1px solid blue;
+}

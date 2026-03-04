@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.image-box{
+    width: 400px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+  
+}
+
+.image-box img{
+    max-width: 100%;
+    height: auto;
+      transition: all 0.4s linear;
+}
+
+.image-box:hover img{
+    transform: scale(1,2);
+}   

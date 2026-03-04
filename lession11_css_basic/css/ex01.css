@@ -1,0 +1,48 @@
+/*nguyên tắc khi áp dụng kế thừa trong css
+-phân tích tìm ra những thành phần đc sử dụng nhiều gióng nhau =>nhóm
+vào 1
+-những cách kế thừa trong css:
++bổ sung thêm class vào element
++nhóm các nội dung css trùng nhua vào một block CSS(mỗi
+selection cách nhau bởi dấu phẩy)
++dùng biết để lưu lại các giá trị hay sử dụng:color,font-family,padding,
+font-siye...
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.product-list{
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+.product-list .item{
+    padding: 15px 0;
+    text-align: center;
+    background: rgb(28, 10, 101);
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid red;
+    text-decoration: underline;
+}
+.product-list .last,
+.product-list .first{
+    background: rgb(84, 53, 12);
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    padding: 30px 0;
+    font-style: italic;
+}
+
+.product-list .last{
+    text-shadow: 3px 3px 3px #ccc;
+}

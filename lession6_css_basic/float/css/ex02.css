@@ -1,0 +1,16 @@
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.item{
+    width: 33,33%;
+    float: left;
+    padding: 10px;
+    background-color: green;
+    color: aliceblue;
+}
+
+.box{
+    overflow: auto;
+}

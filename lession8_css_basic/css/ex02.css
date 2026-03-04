@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.content{
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #923232;
+    padding: 20px;
+}
+
+.content ul{
+    list-style: none;
+}
+
+.content ul li{
+    line-height: 1.5;
+    background: url(../../baitap/image/1.png) no-repeat left center;
+    background-size: 5%;
+    padding-left: 28px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+.content ul li::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+}

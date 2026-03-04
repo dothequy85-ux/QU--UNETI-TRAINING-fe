@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.list-song{
+    width: 500px;
+    margin: 30px auto;
+}
+
+.list-song .item{
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+    display: list-item;
+    list-style: decimal-leading-zero;
+    color: greenyellow;
+}
+
+.list-song .item *{
+    color: initial;
+}

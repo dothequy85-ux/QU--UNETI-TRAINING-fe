@@ -1,0 +1,40 @@
+/*
+thuộc tính opacity
+-tác dụng:làm mờ các thành phần html và các thành phần bên trong nó
+-cú pháp:opaciry:value
+=>nhận các giá trị từ 0 đến 1
+
+lưu ý:
+-opacity sẽ tác dụng all các thành phần bên trong nó (có cae
+text, màu, chữ,...)
+-nếu muốn giảm opacity của backgrount =>áp dụng kiến thưc color opacity
+
+
+
+*/
+.text {
+color:#fff;
+ background: green;   
+opacity: 0.5;
+}
+
+.content{
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.va h1{
+    color: #fff;
+    background-color: red;
+}
+
+.va .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000031;
+}
