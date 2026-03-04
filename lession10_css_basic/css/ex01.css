@@ -1,0 +1,82 @@
+/*
+Thuộc tính transform
+- Ý nghĩa: Thực hiện thay đổi 1 khối nào đó: xoay, nghiêng, di
+chuyển, ...
+- Cú pháp: transform: value
+
+1. rotate() =>xoay
+- Cú pháp: transform: rotate(angle)
+- Ví dụ: transform: rotate(90deg)
+- Lưu ý: Số dương => Theo chiều kim đồng hồ, số âm ngược chiều kim
+đồng hồ
+
+2rotateX: xoay theo trụ X
+
+2rotateX: xoay theo trụ y
+
+3rotateZ:xoay theo trục Z( giống rotate)
+
+4. rotateZ() => Xoay theo trục Z (Giống rotate())
+
+5. scale(x,y) => Phóng to và thu nhỏ thành phần
+
+6. scaleX(x) => Phóng to, thu nhỏ theo trục X
+
+7. scaleY(y) => Phóng to, thu nhỏ theo trục Y
+
+8. sknew(x,y) => Nghiêng theo trục x, y
+
+9. sknewX(x) => Nghiêng theo trục X
+
+10. sknewY(y) => Nghiêng theo trục Y X
+
+11. trans late() => Di chuyển thành phần theo trục X, Y
+
+12. trans lateX() => Di chuyển thành phần theo trục X
+
+13. trans lateY() => Di chuyển thành phần theo trục Y
+
+Lưu ý: Có thể kết hợp nhiều giá trị transform cùng 1 lúc
+
+Sự khác nhau giữa margin và position relative
+
+- margin: Khi di chuyển sẽ đẩy các thành phần khác di chuyển theo
+(Làm thay đổi bố cục ban đầu)
+- position relative: Không làm bố cục ban đầu, chỉ di chuyển thành
+phần tác động
+
+Sự khác nhau giữa position relative và translate
+- position relative: Khi sử dụng % => Tỷ lệ theo thành phần cha
+- trans late: Khi sử dụng % => Tỷ lệ theo size của thành phần
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.container{
+    width: 500px;
+    margin: 30px auto;
+    border:1px solid red;
+    padding: 30px;
+}
+
+.block{
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    transition: all 0.4s linear;
+}
+
+.container:hover .block{
+/* transform: rotate(360deg) scale(1.5); */
+/* transform: scaleZ(1.5); */
+/* transform: skew(0deg, 30deg); */
+transform: translate (50px,40px);
+}

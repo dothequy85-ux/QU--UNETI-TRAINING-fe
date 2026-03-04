@@ -1,0 +1,27 @@
+nguyên tắc khi làm việc với BEM
+-bắt buộc phải dùng đến tiếng anh kih đặt tên class (hạn chế viết sao chính tả)
+-không quá máy móc về nguyên tắc BEM 
+-không viết tắt(trừ một số trường hợp nhưng phải viết tắt dễ hiểu)
+
+cú pháp BEM:
+1. Block: header, footer, content, menu, ...(Nếu có 2 chữ trở lên nên dùng gạch)
+
+2. Elements: block_elements: header_top, header_inner, header_logo, ... (Nếu
+tên Element có 2 chữ trở lên, nối bằng 1 dấu gạch ngang)
+
+3. Modifier: block_elements -- modifier: header_top-left, header_top -- right,
+header_menu -- item
+
+Lưu ý: Trên thực tế sẽ có 2 tình huống:
+
+1. Block -- modifier
+
+2. Element -- modifier
+
+một số lưu ý kih làm việc với BEM:
+-nếu áp dụng kế thừa =>không nên đưa BE, và Class kế thừa
+-bởi vì BEM giúp hạn chế việc  bị trừng tên  class ,gặp khó khăn khi nghĩ tên class 
+=>block,elements,Modofier không nên đặt quá dài
+
+
+

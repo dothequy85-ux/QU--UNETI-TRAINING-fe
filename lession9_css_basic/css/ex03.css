@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.checkbox-lists {
+    padding: 15px;
+    border: 1px solid red;
+    width: 500px;
+    margin: 30px auto;
+
+}
+
+.checkbox-lists label{
+    display: block;
+    padding: 10px 0;
+    display: flex;
+}
+
+.checkbox-lists span{
+    display: flex;
+}
+
+.checkbox-lists i{
+display: block;
+position: absolute;
+color: green;
+left:-11px;
+font-size: 0.8rem;
+top:3px;
+transition: all 0.4s linear;
+}
+
+
+
+.checkbox-lists label::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid green;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.checkbox-lists input:checked ~ span{
+    color: red;
+  
+}
+
+
+

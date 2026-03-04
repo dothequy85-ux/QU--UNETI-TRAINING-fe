@@ -1,0 +1,37 @@
+/*thứ tự ưu tiên CSS
+0!important(thêm sau thuộc tính muốn ưu tiên)
+1.inline
+2.ID
+3.CLASS
+4.TAG
+
+*lưu ý: 
+-không nên lạm dụng !important(ảnh hưởng 
+đến phần ghi đè sau này)
+-nếu tất cả :inline,id ,class,tag đều có !important
+=>theo thứ tự:inline=>id=>class=>tag
+-selector các chi tiết =>ưu tiên càng cao
+-CSS viết dưới sẽ có độ ưu tiên cao hơn (áp dụng cho các file CSS khác nhau)
+
+
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.title{
+    color: red;
+}
+
+#title{
+    color: green;
+}
+
+h2{
+    color: aquamarine !important;
+}

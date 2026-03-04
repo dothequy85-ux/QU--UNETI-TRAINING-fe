@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+.switch{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 30px;
+   
+}
+
+.switch label{
+    display: block;
+    width:100px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 25px;
+    padding: 2px;
+     cursor: pointer;
+      position: relative;
+}
+
+.switch label .btn{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    top:0;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    right: auto;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 1;
+}
+
+.switch label input{
+    display: none;
+}
+
+.switch  label input:checked ~.btn{
+    left: calc(100% - 38%);
+
+}
+
+.switch label .active{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+    border-radius: 25px;
+    display: none;
+}
+
+.switch  label input:checked ~.active{
+    display: block;
+}
